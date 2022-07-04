@@ -28,7 +28,9 @@ app.get("/usuario", async(req,res) => {
     const usuario = await prisma.usuario.findMany()
     return res.status(200).send(usuario)
 })
+//DEPLOY
 
-app.listen(3030,()=>{
+
+app.listen(process.env.PORT || 3030,()=>{
     console.log("Servidor ON!");
 });

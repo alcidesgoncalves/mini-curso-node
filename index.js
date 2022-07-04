@@ -31,6 +31,6 @@ app.get("/usuario", async(req,res) => {
 //DEPLOY
 
 
-app.listen(process.env.PORT || 3030,()=>{
+app.listen(process.env.NODE_PORT || 3030,()=>{
     console.log("Servidor ON!");
 });
